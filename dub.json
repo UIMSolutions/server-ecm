@@ -1,0 +1,53 @@
+{
+	"name": "server-ecm",
+	"authors": [ "UI Manufaktur Team"	],
+	"copyright": "Copyright © 2017-2021, UI Manufaktur UG",
+	"dependencies": {
+		"vibe-d": "~>0.9.4"
+	},
+	"description": "Documentation for the uim-bootstrap library",
+	"license": "UIM",
+	"targetType": "executable",
+	"sourcePaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-data",
+		"../../LIBS/uim-web",
+		"../../LIBS/uim-css",
+		"../../LIBS/uim-json",
+		"../../LIBS/uim-javascript",
+		"../../LIBS/uim-jquery",
+		"../../LIBS/uim-html",
+		"../../LIBS/uim-bootstrap",
+		"../../LIBS/uim-vue",
+		"../../LIBS/uim-mongo",
+		"../../LIBS/uim-apps",
+		"../../LIBS/uim-servers",
+		"../../LIBS/uim-ecm",
+		"../../LIBS/uim-entities",
+
+		"../../LAYOUTS/layout-tabler/source/layouts",
+    "./"
+	],
+	"importPaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-data",
+		"../../LIBS/uim-web",
+		"../../LIBS/uim-css",
+		"../../LIBS/uim-javascript",
+		"../../LIBS/uim-jquery",
+		"../../LIBS/uim-json",
+		"../../LIBS/uim-html",
+		"../../LIBS/uim-bootstrap",
+		"../../LIBS/uim-vue",
+		"../../LIBS/uim-mongo",
+		"../../LIBS/uim-apps",
+		"../../LIBS/uim-servers",
+		"../../LIBS/uim-ecm",
+		"../../LIBS/uim-entities",
+
+		"../../LAYOUTS/layout-tabler/source/layouts",
+    "./"
+	]
+}

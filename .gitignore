@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/server-ecm
+server-ecm.so
+server-ecm.dylib
+server-ecm.dll
+server-ecm.a
+server-ecm.lib
+server-ecm-test-*
+*.exe
+*.o
+*.obj
+*.lst
