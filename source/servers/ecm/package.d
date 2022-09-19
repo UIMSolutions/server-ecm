@@ -8,30 +8,28 @@ mixin ImportUim;
 public import colored;
 
 // Additional imports
-public import uim.central;
 public import uim.jsonbase;
 public import uim.entities;
 public import uim.entitybase;
-
-// ecm library
-public import uim.ecm;
+public import uim.apps;
+public import uim.servers;
 
 // server-ecm packages
-public import servers.ecm.actions;
-public import servers.ecm.apis;
-public import servers.ecm.pages;
+public import servers.ecm.controllers;
+public import servers.ecm.views;
+public import servers.ecm.routes;
 
-public import models.system;
+public import models.systems;
 public import models.ecm;
 
 public import layouts.tabler;
 
 // mixin(ImportLocal!("ecm"));
 
-DAPPApplication serverecm;
+DAPPApplication thisServer;
 string[size_t] errorMessages;
 static this() {
-  serverEcm = new class DAPPApplication {
+  thisServer = new class DAPPApplication {
     this() { super(); 
 /*       this
       .layout(ecmLayout)

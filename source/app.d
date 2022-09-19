@@ -9,11 +9,14 @@ void main(string[] args) {
   
 	auto router = new URLRouter;	
   
-
-
 	router
-		.get("/login", &app.login.request)
-		.get("/logout", &app.logout.request);
+		.get("/", &ecmIndex);/* 
+		.get("/login", &uimLoginPage)
+		.get("/login2", &uimLogin2Page)
+		.get("/register", &uimRegister)
+		.get("/logout", &uimLogout)
+		.get("/server", &uimServer)
+		.get("/sites", &uimSites); */
 
   mixin(SetHTTP!());
 	runApplication();
