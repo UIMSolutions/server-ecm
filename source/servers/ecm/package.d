@@ -26,16 +26,13 @@ public import layouts.tabler;
 
 // mixin(ImportLocal!("ecm"));
 
-DAPPApplication thisServer;
+DMVCApplication thisApplication;
 string[size_t] errorMessages;
 static this() {
-  thisServer = new class DAPPApplication {
-    this() { super(); 
-/*       this
-      .layout(ecmLayout)
-      .scripts.addLinks(
-        "/js/apps/ecm/app.js");
- */    
-    }
-  };
+  thisApplication = MVCApplication
+    .rootPath("/")
+    .route("index", ECMIndexPageController)
+    .route("documents",  ECMDocumentsPageController)
+    .route("folders",    ECMFoldersPageController)
+    .route("workspaces", ECMWorkspacesPageController);
 }

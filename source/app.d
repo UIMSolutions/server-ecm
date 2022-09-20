@@ -10,7 +10,10 @@ void main(string[] args) {
 	auto router = new URLRouter;	
   
 	router
-		.get("/", &ecmIndex);/* 
+		.get("/", &ecmIndex)
+		.get("/documents", &ecmDocuments)
+		.get("/folders", &ecmFolders)
+		.get("/workspaces", &ecmWorkspaces);/* 
 		.get("/login", &uimLoginPage)
 		.get("/login2", &uimLogin2Page)
 		.get("/register", &uimRegister)

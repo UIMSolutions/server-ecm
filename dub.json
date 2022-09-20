@@ -23,6 +23,7 @@
 		"../../LIBS/uim-jsonbase",
 		"../../LIBS/uim-entities",
 		"../../LIBS/uim-entitybase",
+		"../../LIBS/uim-mvc",
 
 		"../../MODELS/model-systems",
 		"../../MODELS/model-ecm",
@@ -44,6 +45,7 @@
 		"../../LIBS/uim-jsonbase",
 		"../../LIBS/uim-entities",
 		"../../LIBS/uim-entitybase",
+		"../../LIBS/uim-mvc",
 		
 		"../../MODELS/model-systems",
 		"../../MODELS/model-ecm",
