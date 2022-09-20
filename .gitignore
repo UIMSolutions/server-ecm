@@ -13,3 +13,5 @@ server-ecm-test-*
 *.o
 *.obj
 *.lst
+dub.selections.json
+logs/server-ecm-http-20220919T113940.7646015.log
