@@ -13,6 +13,7 @@ public import uim.entities;
 public import uim.entitybase;
 public import uim.apps;
 public import uim.servers;
+public import uim.mvc;
 
 // server-ecm packages
 public import servers.ecm.controllers;
