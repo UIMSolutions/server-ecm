@@ -3,8 +3,8 @@ module servers.ecm.views.index;
 @safe:
 import servers.ecm;
 
-class DECMIndexView : DView {
-  mixin(ViewThis!("ECMIndexView"));
+class DECMIndexView : DMVCView {
+  mixin(MVCViewThis!("ECMIndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
     debugMethodCall(moduleName!DECMIndexView~":DECMIndexView("~this.name~")::toH5");
@@ -26,4 +26,4 @@ class DECMIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("ECMIndexView"));
+mixin(MVCViewCalls!("ECMIndexView", "DECMIndexView"));

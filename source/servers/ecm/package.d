@@ -18,7 +18,6 @@ public import uim.mvc;
 // server-ecm packages
 public import servers.ecm.controllers;
 public import servers.ecm.views;
-public import servers.ecm.routes;
 
 public import models.systems;
 public import models.ecm;
@@ -32,8 +31,8 @@ string[size_t] errorMessages;
 static this() {
   thisApplication = MVCApplication
     .rootPath("/")
-    .route("index", ECMIndexPageController)
-    .route("documents",  ECMDocumentsPageController)
-    .route("folders",    ECMFoldersPageController)
-    .route("workspaces", ECMWorkspacesPageController);
+    .addRoute(MVCRoute("index",      HTTPMethod.GET, ECMIndexPageController))
+    .addRoute(MVCRoute("documents",  HTTPMethod.GET, ECMDocumentsIndexPageController))
+    .addRoute(MVCRoute("folders",    HTTPMethod.GET, ECMFoldersIndexPageController))
+    .addRoute(MVCRoute("workspaces", HTTPMethod.GET, ECMWorkspacesIndexPageController));
 }

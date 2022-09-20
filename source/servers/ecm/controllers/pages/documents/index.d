@@ -10,7 +10,8 @@ class DECMDocumentsIndexPageController : DMVCPageController {
     super.initialize;
 
     this
-      .view(ECMDocumentsIndexView(this));
+      .view(
+        ECMDocumentsIndexView(this));
   }
 }
 mixin(MVCControllerCalls!("ECMDocumentsIndexPageController", "DECMDocumentsIndexPageController"));

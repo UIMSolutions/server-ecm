@@ -10,7 +10,8 @@ class DECMWorkspacesIndexPageController : DMVCPageController {
     super.initialize;
 
     this
-      .view(ECMWorkspacesIndexView(this));
+      .view(
+        ECMWorkspacesIndexView(this));
   }
 }
 mixin(MVCControllerCalls!("ECMWorkspacesIndexPageController", "DECMWorkspacesIndexPageController"));
