@@ -2,7 +2,7 @@
 docs.json
 __dummy.html
 docs/
-/server-ecm
+server-ecm
 server-ecm.so
 server-ecm.dylib
 server-ecm.dll
@@ -14,4 +14,7 @@ server-ecm-test-*
 *.obj
 *.lst
 dub.selections.json
-logs/server-ecm-http-20220919T113940.7646015.log
+logs/
+views/
+notes/
+
