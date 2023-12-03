@@ -20,8 +20,9 @@ class DECMIndexPageController : DMVCPageController {
   }
 
   override void afterResponse(STRINGAA options = null) {
-    // debugMethodCall(moduleName!DECMIndexPageController~":DECMIndexPageController::afterResponse");
-    if (this.session) this.session.save;
+    debugMethodCall(moduleName!DECMIndexPageController~":DECMIndexPageController::afterResponse");
+    super.afterResponse(options);
+    // if (this.session) this.session.save;
   }
 }
 mixin(MVCControllerCalls!("ECMIndexPageController", "DECMIndexPageController"));

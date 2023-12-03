@@ -8,8 +8,11 @@ void main(string[] args) {
   mixin GetoptConfig;
   
 	auto router = new URLRouter;	
+	debug writeln("SetRouterDefault!()");
+  mixin(SetRouterDefault!());
+
   thisApplication
-		.rootPath("/")
+		.rootPath("/ecm/")
 		.register(router);
 
   mixin(SetHTTP!());
